@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery | blog</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="jQuery | blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="10.测试">
+<meta property="og:url" content="http://yoursite.com/2022/03/27/10.%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote s">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-27T09:16:57.553Z">
+<meta property="article:modified_time" content="2022-03-27T09:16:57.553Z">
+<meta property="article:author" content="wangweilin">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>wangweilin</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/WilliamWang106" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="weibo" href="http://weibo.com/u/2307534817" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:627516754@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=627516754&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(10)</small></div></li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="10">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">王伟霖</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="Search..." />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class=""
+           href="/2017/03/01/1-HTML%E5%9F%BA%E7%A1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTML基础测试修改">HTML基础测试修改</span>
+            <span class="post-date" title="2017-03-01 09:45:52">2017/03/01</span>
+        </a>
+        
+        <a  class=""
+           href="/2022/03/27/10.%E6%B5%8B%E8%AF%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="10.测试">10.测试</span>
+            <span class="post-date" title="2022-03-27 17:16:57">2022/03/27</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/05/3.JS%E5%9F%BA%E7%A1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS基础">JS基础</span>
+            <span class="post-date" title="2017-03-05 15:40:32">2017/03/05</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/05/2-%E7%A7%BB%E5%8A%A8WEB/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="移动WEB">移动WEB</span>
+            <span class="post-date" title="2017-03-05 12:42:32">2017/03/05</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/23/4.DOM/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS-DOM">JS-DOM</span>
+            <span class="post-date" title="2017-03-23 10:43:12">2017/03/23</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/05/12/5.jQuery/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="jQuery">jQuery</span>
+            <span class="post-date" title="2017-05-12 13:43:02">2017/05/12</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/28/6.JS%E9%AB%98%E7%BA%A7/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS-高级">JS-高级</span>
+            <span class="post-date" title="2017-03-28 00:00:00">2017/03/28</span>
+        </a>
+        
+        <a  class=""
+           href="/2018/03/19/8.git-material/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="git">git</span>
+            <span class="post-date" title="2018-03-19 00:00:00">2018/03/19</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/05/18/7.ajax/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ajax">Ajax</span>
+            <span class="post-date" title="2017-05-18 00:00:00">2017/05/18</span>
+        </a>
+        
+        <a  class=""
+           href="/2018/08/20/9.ES6/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ES6">ES6</span>
+            <span class="post-date" title="2018-08-20 19:32:19">2018/08/20</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-5.jQuery" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">jQuery</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <!-- <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2022-03-27 17:16:57'>2017-05-12 13:43</time>
+        
+    </div> -->
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery初步"><span class="toc-text">jQuery初步</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#今日基础目标"><span class="toc-text">今日基础目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery概念："><span class="toc-text">jQuery概念：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-的优点"><span class="toc-text">jQuery 的优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-的下载"><span class="toc-text">jQuery 的下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-的使用步骤"><span class="toc-text">jQuery 的使用步骤</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery入门"><span class="toc-text">jQuery入门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-的入口函数"><span class="toc-text">jQuery 的入口函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一种："><span class="toc-text">第一种：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二种："><span class="toc-text">第二种：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-的基本-使用"><span class="toc-text">jQuery 的基本**使用**</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-的顶级对象"><span class="toc-text">jQuery 的顶级对象 $</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-对象和-DOM-对象"><span class="toc-text">jQuery 对象和 DOM 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#特别注意"><span class="toc-text">特别注意</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相互转换"><span class="toc-text">相互转换</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#jQuery-常用API"><span class="toc-text">jQuery 常用API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-选择器"><span class="toc-text">jQuery 选择器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#隐式迭代"><span class="toc-text">隐式迭代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-筛选选择器"><span class="toc-text">jQuery 筛选选择器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-筛选方法（重点）"><span class="toc-text">jQuery 筛选方法（重点）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jQuery-里面的排他思想"><span class="toc-text">jQuery 里面的排他思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#链式-编程"><span class="toc-text">链式**编程**</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-样式操作"><span class="toc-text">jQuery 样式操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#操作-css-方法"><span class="toc-text">操作 css 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置类样式方法"><span class="toc-text">**设置类样式方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jQuery-效果"><span class="toc-text">jQuery 效果</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#滑动效果"><span class="toc-text">滑动效果</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#事件切换"><span class="toc-text">事件切换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#动画队列及其停止排队方法"><span class="toc-text">动画队列及其停止排队方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#淡入淡出效果"><span class="toc-text">淡入淡出效果</span></a></li></ol></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="jQuery初步"><a href="#jQuery初步" class="headerlink" title="jQuery初步"></a>jQuery初步</h1><h2 id="今日基础目标"><a href="#今日基础目标" class="headerlink" title="今日基础目标"></a>今日基础目标</h2><blockquote>
+<p>能够说出什么是 jQuery </p>
+<p>能够说出 jQuery 的优点</p>
+<p>能够简单使用 jQuery</p>
+<p>能够说出 DOM 对象和 jQuery 对象的区别</p>
+<p>jQuery 选择器</p>
+<p>jQuery 样式操作</p>
+</blockquote>
+<h2 id="jQuery概念："><a href="#jQuery概念：" class="headerlink" title="jQuery概念："></a>jQuery概念：</h2><p>jQuery 是一个快速、简洁的 JavaScript 库【javascript文件】</p>
+<p>​    JavaScript<strong>**库：</strong>即 library，是一个封装好的特定的集合（方法和函数）。</p>
+<p>​    学习jQuery本质： 就是学习调用这些函数（方法）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">简单理解： 就是一个JS 文件，里面对我们原生js代码进行了封装，存放到里面。这样我们可以快速高效的使用这些封装好的功能了。</span><br><span class="line"></span><br><span class="line">其设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</span><br><span class="line"></span><br><span class="line">j 就是 JavaScript；   Query 查询； 意思就是查询js，把js中的DOM操作做了封装，我们可以快速的查询使用里面的功能。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">别人写好的JS库，我们拿过来用</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>JavaScript</strong> <strong>库</strong></p>
+<blockquote>
+<p>jQuery</p>
+<p>Prototype</p>
+<p>YUI</p>
+<p>Dojo</p>
+<p>Ext JS</p>
+<p>l移动端的zepto</p>
+<p>这些库都是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对原生 JavaScript 的封装，内部都是用JavaScript 实现的，我们主要学习的是 jQuery。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</blockquote>
+<hr>
+<h2 id="jQuery-的优点"><a href="#jQuery-的优点" class="headerlink" title="jQuery 的优点"></a><strong>jQuery</strong> <strong>的优点</strong></h2><blockquote>
+<p>轻量级。核心文件才几十kb，不会影响页面加载速度</p>
+<p>链式编程、隐式迭代</p>
+<p>对事跨浏览器兼容。基本兼容了现在主流的浏览器</p>
+<p>样式、动画支持，大大简化了DOM操作</p>
+<p>5/支持插件扩展开发。有着丰富的第三方的插件，例如：树形菜单、日期控件、轮播图等</p>
+<p>免费、开源</p>
+</blockquote>
+<h2 id="jQuery-的下载"><a href="#jQuery-的下载" class="headerlink" title="jQuery 的下载"></a><strong>jQuery</strong> <strong>的下载</strong></h2><p>官网地址： <a href="https://jquery.com/" target="_blank" rel="noopener">https://jquery.com/</a></p>
+<hr>
+<p>版本：</p>
+<blockquote>
+<p>1x ：兼容 IE 678 等低版本浏览器， 官网不再更新</p>
+<p>2x ：不兼容 IE 678 等低版本浏览器， 官网不再更新</p>
+<p>3x ：不兼容 IE 678 等低版本浏览器， 是官方主要更新维护的</p>
+</blockquote>
+<p>其他版本：<a href="https://code.jquery.com/" target="_blank" rel="noopener">https://code.jquery.com/</a></p>
+<h2 id="jQuery-的使用步骤"><a href="#jQuery-的使用步骤" class="headerlink" title="jQuery 的使用步骤"></a><strong>jQuery</strong> <strong>的使用步骤</strong></h2><blockquote>
+<ol>
+<li>下载jQuery</li>
+<li>引入 jQuery 文件</li>
+<li>使用即可</li>
+</ol>
+</blockquote>
+<h1 id="jQuery入门"><a href="#jQuery入门" class="headerlink" title="jQuery入门"></a>jQuery入门</h1><h2 id="jQuery-的入口函数"><a href="#jQuery-的入口函数" class="headerlink" title="jQuery 的入口函数"></a><strong>jQuery</strong> <strong>的入口函数</strong></h2><h3 id="第一种："><a href="#第一种：" class="headerlink" title="第一种："></a>第一种：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(function () &#123;   </span><br><span class="line">    ...  &#x2F;&#x2F; 此处是页面 DOM 加载完成的入口</span><br><span class="line"> &#125;) ;</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二种："><a href="#第二种：" class="headerlink" title="第二种："></a>第二种：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(function()&#123;</span><br><span class="line">   ...  &#x2F;&#x2F;  此处是页面DOM加载完成的入口</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>注意点：</p>
+<p>等着 DOM 结构渲染完毕即可执行内部代码，不必等到所有外部资源加载完成，jQuery 帮我们完成了封装。</p>
+<p>不同于原生 js 中的 load 事件是等页面文档、外部的js 文件、css文件、图片加载完毕才执行内部代码。</p>
+<p>更推荐使用第一种方式。</p>
+</blockquote>
+<h2 id="jQuery-的基本-使用"><a href="#jQuery-的基本-使用" class="headerlink" title="jQuery 的基本**使用**"></a><strong>jQuery</strong> <strong>的基本**</strong>使用**</h2><h3 id="jQuery-的顶级对象"><a href="#jQuery-的顶级对象" class="headerlink" title="jQuery 的顶级对象 $"></a><strong>jQuery</strong> <strong>的顶级对象</strong> $</h3><blockquote>
+<p>1.$ 是 jQuery 的别称，在代码中可以使用 jQuery 代替 $，但一般为了方便，通常都直接使用 $ 。</p>
+<p>2.$ 是jQuery 的顶级对象， 相当于原生JavaScript中的 window。把元素利用$包装成jQuery对象，就可以调用jQuery 的方法。</p>
+</blockquote>
+<h3 id="jQuery-对象和-DOM-对象"><a href="#jQuery-对象和-DOM-对象" class="headerlink" title="jQuery 对象和 DOM 对象"></a><strong>jQuery</strong> <strong>对象和</strong> <strong>DOM</strong> <strong>对象</strong></h3><p>$(‘div’).css(‘属性’, ‘值’)     小知识点 </p>
+<p>js的对象只能用JS的属性和方法</p>
+<p>Jq的对象只能用JQ的属性和方法</p>
+<p>目的：学会区分【练习】</p>
+<blockquote>
+<p>用原生 JS 获取来的对象就是 DOM 对象【document.getElement等方法】</p>
+<p>jQuery 方法获取的元素就是 jQuery 对象【$(‘div’)等】</p>
+<p>jQuery 对象本质是： 利用$对DOM 对象包装后产生的对象（伪数组形式存储）</p>
+</blockquote>
+<h4 id="特别注意"><a href="#特别注意" class="headerlink" title="特别注意"></a>特别注意</h4><blockquote>
+<p>只有 jQuery 对象才能使用 jQuery 方法，DOM 对象则使用原生的 JavaScirpt 方法。</p>
+</blockquote>
+<h4 id="相互转换"><a href="#相互转换" class="headerlink" title="相互转换"></a>相互转换</h4><blockquote>
+<p>DOM 对象与 jQuery 对象之间是可以相互转换的。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为原生js 比 jQuery 更大，原生的一些属性和方法 jQuery没有给我们封装. 要想使用这些属性和方法需要把jQuery对象转换为DOM对象才能使用。</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>DOM 对象转换为 jQuery 对象： $(DOM对象)</p>
+<p>jQuery 对象转换为 DOM 对象（两种方式）</p>
+<p>​    $(‘div’) [index]       index 是索引号 </p>
+<p>​    $(‘div’) .get(index)    index 是索引号               </p>
+</blockquote>
+<h1 id="jQuery-常用API"><a href="#jQuery-常用API" class="headerlink" title="jQuery 常用API"></a><strong>jQuery</strong> 常用API</h1><p>目标</p>
+<blockquote>
+<ol>
+<li>jQuery 选择器</li>
+<li>jQuery 样式操作</li>
+<li>jQuery 效果</li>
+<li>jQuery 属性操作</li>
+<li>jQuery 文本属性值</li>
+<li>jQuery 元素操作</li>
+<li>jQuery 尺寸、位置操作</li>
+</ol>
+</blockquote>
+<h2 id="jQuery-选择器"><a href="#jQuery-选择器" class="headerlink" title="jQuery 选择器"></a><strong>jQuery</strong> <strong>选择器</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">原生 JS 获取元素方式很多，很杂，而且兼容性情况不一致，因此jQuery给我们做了封装，使获取元素统一标准</span><br></pre></td></tr></table></figure>
+
+<p><strong>$(“选择器”)   // 里面选择器直接写 CSS 选择器即可，但是要加引号</strong>     </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$(&#39;#id&#39;)&#x3D;&#x3D;》指定id元素</span><br><span class="line"></span><br><span class="line">$(&#39;*&#39;)&#x3D;&#x3D;》所有元素</span><br><span class="line"></span><br><span class="line">$(&#39;.class&#39;)&#x3D;&#x3D;》指定class元素</span><br><span class="line"></span><br><span class="line">$(&#39;div&#39;)&#x3D;&#x3D;》根据标签获取元素</span><br><span class="line"></span><br><span class="line">$(&#39;div,p,li&#39;)&#x3D;&#x3D;》获取多个</span><br><span class="line"></span><br><span class="line">$(&#39;li.class&#39;)&#x3D;&#x3D;&gt;交集获取</span><br><span class="line"></span><br><span class="line">$(&#39;ul&gt;li&#39;)&#x3D;&#x3D;&gt;子代</span><br><span class="line"></span><br><span class="line">$(&#39;ul li&#39;)&#x3D;&#x3D;&gt;后代</span><br></pre></td></tr></table></figure>
+
+<h3 id="隐式迭代"><a href="#隐式迭代" class="headerlink" title="隐式迭代"></a><strong>隐式迭代</strong></h3><blockquote>
+<p>遍历内部 DOM 元素（伪数组形式存储）的过程就叫做<strong>隐式迭代</strong></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">简单理解：给匹配到的所有元素进行循环遍历，执行相应的方法，而不用我们再进行循环，简化我们的操作，方便我们调用。</span><br></pre></td></tr></table></figure>
+
+<p>小练习：</p>
+<p>​    给一组li修改样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;ul&gt;</span><br><span class="line">		&lt;li&gt;1&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;2&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;3&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;4&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;5&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;6&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;7&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;8&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;9&lt;&#x2F;li&gt;</span><br><span class="line">		&lt;li&gt;10&lt;&#x2F;li&gt;</span><br><span class="line">	&lt;&#x2F;ul&gt;</span><br><span class="line"></span><br><span class="line">	&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line"></span><br><span class="line">		&#x2F;&#x2F; 因为：隐式迭代</span><br><span class="line">		$(&#39;ul li&#39;).css(&#39;background&#39;,&#39;blue&#39;);</span><br><span class="line">		</span><br><span class="line">		&#x2F;&#x2F; 原来</span><br><span class="line">		&#x2F;&#x2F; var lis &#x3D; document.querySelectorAll(&#39;li&#39;);</span><br><span class="line"></span><br><span class="line">		&#x2F;&#x2F; for (var i &#x3D; 0; i &lt; lis.length; i++) &#123;</span><br><span class="line"></span><br><span class="line">		&#x2F;&#x2F; 	lis[i].style.background &#x3D; &#39;red&#39;;</span><br><span class="line"></span><br><span class="line">		&#x2F;&#x2F; &#125;</span><br><span class="line"></span><br><span class="line">	&lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="jQuery-筛选选择器"><a href="#jQuery-筛选选择器" class="headerlink" title="jQuery 筛选选择器"></a><strong>jQuery</strong> <strong>筛选选择器</strong></h3><blockquote>
+<p>$(‘li:first’)：第一个元素</p>
+<p>$(‘li:last’)：最后一个元素</p>
+<p>$(‘li:eq(2)’)==》索引为2【查找指定索引的元素】</p>
+<p>$(‘li’).eq(2);          记住，常用</p>
+<p>$(‘li:odd’)==》索引为奇数</p>
+<p>$(‘li:even’)==》索引为偶数</p>
+<p>注意：索引是从0开始的</p>
+</blockquote>
+<h3 id="jQuery-筛选方法（重点）"><a href="#jQuery-筛选方法（重点）" class="headerlink" title="jQuery 筛选方法（重点）"></a><strong>jQuery</strong> <strong>筛选方法（重点）</strong></h3><p>对象.方法();</p>
+<blockquote>
+<p>$(‘li’).parent()父级</p>
+<p>$(‘ul’).children(‘li’);子集【如果不加参数，获取所有的，如果添加指定的元素，按照指定的找】</p>
+<p>$(‘ul’).find(‘li’)后代</p>
+<p>$(‘li’).siblings(‘li’)兄弟</p>
+<p>$(‘li’),nextAll();后面的</p>
+<p>$(‘li’).prevAll();前面的</p>
+<p>判断是否具有某个类名：$(‘div’).hasClass(‘aaa’)</p>
+<p>$(‘div’).eq(index);指定索引方法【eq推荐用方法】</p>
+</blockquote>
+<blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">重点记住： parent()  children()  find()  siblings()  eq()</span><br></pre></td></tr></table></figure>
+
+<p>小知识点：添加事件，show方法，hide方法，toggle方法</p>
+<p><strong><em>案例下拉菜单</em></strong></p>
+</blockquote>
+<h3 id="jQuery-里面的排他思想"><a href="#jQuery-里面的排他思想" class="headerlink" title="jQuery 里面的排他思想"></a><strong>jQuery</strong> <strong>里面的排他思想</strong></h3><p>案例：多个按钮点击改变当前按钮颜色，其他的不变 </p>
+<p>【index()获取索引值】</p>
+<blockquote>
+<p>想要多选一的效果，排他思想：当前元素设置样式，其余的兄弟元素清除样式。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(this).css(“color”,”red”);</span><br><span class="line"></span><br><span class="line">$(this).siblings(). css(“color”,””); </span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong><em>案例：淘宝服饰精品案例</em></strong>【index()获取索引值】</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">②需要得到当前小li 的索引号，就可以显示对应索引号的图片</span><br><span class="line"></span><br><span class="line">③jQuery 得到当前元素索引号 $(this).index()  </span><br><span class="line"></span><br><span class="line">⑤显示元素 show()   隐藏元素 hide()</span><br></pre></td></tr></table></figure>
+
+<h3 id="链式-编程"><a href="#链式-编程" class="headerlink" title="链式**编程**"></a><strong>链式**</strong>编程**</h3><blockquote>
+<p>$(this).css(‘color’, ‘red’).sibling().css(‘color’, ‘’);</p>
+<p>按钮案例 </p>
+</blockquote>
+<h2 id="jQuery-样式操作"><a href="#jQuery-样式操作" class="headerlink" title="jQuery 样式操作"></a><strong>jQuery</strong> <strong>样式操作</strong></h2><blockquote>
+<p>jQuery 可以使用 css 方法来修改简单元素样式； 也可以操作类，修改多个样式。</p>
+<h3 id="操作-css-方法"><a href="#操作-css-方法" class="headerlink" title="操作 css 方法"></a><strong>操作</strong> <strong>css</strong> <strong>方法</strong></h3></blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">参数只写属性名，则是返回属性值【$(this).css(&#39;&#39;color&#39;&#39;);】</span><br><span class="line"></span><br><span class="line">参数是属性名，属性值，逗号分隔，是设置一组样式，属性必须加引号，值如果是数字可以不用跟单位和引号【$(this).css(&#39;&#39;color&#39;&#39;, &#39;&#39;red&#39;&#39;);】</span><br><span class="line"></span><br><span class="line">参数可以是对象形式，方便设置多组样式。属性名和属性值用冒号隔开， 属性可以不用加引号，</span><br><span class="line">【$(this).css(&#123; &quot;color&quot;:&quot;white&quot;,&quot;font-size&quot;:&quot;20px&quot;&#125;);】</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置类样式方法"><a href="#设置类样式方法" class="headerlink" title="**设置类样式方法"></a>**设置类样式方法</h3><blockquote>
+<p>作用等同于以前的 classList，可以操作类样式，注意操作类里面的参数不要加点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">添加类【$(“div”).addClass(&#39;&#39;current&#39;&#39;);】</span><br><span class="line"></span><br><span class="line">移除类【$(“div”).removeClass(&#39;&#39;current&#39;&#39;);】</span><br><span class="line"></span><br><span class="line">切换类【$(“div”).toggleClass(&#39;&#39;current&#39;&#39;);】</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">原生 JS 中 className 会覆盖元素原先里面的类名。</span><br><span class="line">jQuery 里面类操作只是对指定类进行操作，不影响原先的类名</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>案例：*</em></strong>tab栏切换***</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">点击上部的li，当前li 添加current类，其余兄弟移除类。</span><br><span class="line">点击的同时，得到当前li 的索引号</span><br><span class="line">让下部里面相应索引号的item显示，其余的item隐藏</span><br></pre></td></tr></table></figure>
+
+
+</blockquote>
+<h2 id="jQuery-效果"><a href="#jQuery-效果" class="headerlink" title="jQuery 效果"></a><strong>jQuery</strong> <strong>效果</strong></h2><p><strong>显示隐藏效果</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">show([speed,[easing],[fn]])</span><br><span class="line">hide([speed,[easing],[fn]])</span><br><span class="line">toggle([speed,[easing],[fn]])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">（1）参数都可以省略， 无动画直接显示。</span><br><span class="line">（2）speed：三种预定速度之一的字符串(“slow”,“normal”, or “fast”)或表示动画时长的毫秒数值(如：1000)。</span><br><span class="line">（3）easing：(Optional) 用来指定切换效果，默认是“swing”，可用参数“linear”。</span><br><span class="line">（4）fn:  回调函数，在动画完成时执行的函数，每个元素执行一次。</span><br></pre></td></tr></table></figure>
+
+<h4 id="滑动效果"><a href="#滑动效果" class="headerlink" title="滑动效果"></a><strong>滑动效果</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">slideDown([speed,[easing],[fn]])</span><br><span class="line">slideUp([speed,[easing],[fn]])</span><br><span class="line">slideToggle([speed,[easing],[fn]])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">（1）参数都可以省略。</span><br><span class="line">（2）speed：三种预定速度之一的字符串(“slow”,“normal”, or “fast”)或表示动画时长的毫秒数值(如：1000)。</span><br><span class="line">（3）easing：(Optional) 用来指定切换效果，默认是“swing”，可用参数“linear”。</span><br><span class="line">（4）fn:  回调函数，在动画完成时执行的函数，每个元素执行一次</span><br></pre></td></tr></table></figure>
+
+<h4 id="事件切换"><a href="#事件切换" class="headerlink" title="事件切换"></a><strong>事件切换</strong></h4><p><strong>hover([over,]out)</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">（1）over:鼠标移到元素上要触发的函数（相当于mouseenter）</span><br><span class="line"></span><br><span class="line">（2）out:鼠标移出元素要触发的函数（相当于mouseleave）</span><br><span class="line"></span><br><span class="line">（3）如果只写一个函数，则鼠标经过和离开都会触发它</span><br></pre></td></tr></table></figure>
+
+<h4 id="动画队列及其停止排队方法"><a href="#动画队列及其停止排队方法" class="headerlink" title="动画队列及其停止排队方法"></a><strong>动画队列及其停止排队方法</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">动W或者效果一旦触发就会执行，如果多次触发，就造成多个动画或者效果排队执行。</span><br><span class="line"></span><br><span class="line">停止排队:stop()</span><br><span class="line"></span><br><span class="line">(1）stop() 方法用于停止动画或效果。</span><br><span class="line">(2)  注意： stop() 写到动画或者效果的前面， 相当于停止结束上一次的动画</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="淡入淡出效果"><a href="#淡入淡出效果" class="headerlink" title="淡入淡出效果"></a><strong>淡入淡出效果</strong></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">fadeIn([speed,[easing],[fn]])</span><br><span class="line">fadeOut([speed,[easing],[fn]])</span><br><span class="line">fadeToggle([speed,[easing],[fn]])</span><br><span class="line">fadeTo([[speed],opacity,[easing],[fn]])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">（1）参数都可以省略。</span><br><span class="line">（2）speed：三种预定速度之一的字符串(“slow”,“normal”, or “fast”)或表示动画时长的毫秒数值(如：1000)。</span><br><span class="line">（3）easing：(Optional) 用来指定切换效果，默认是“swing”，可用参数“linear”。</span><br><span class="line">（4）fn:  回调函数，在动画完成时执行的函数，每个元素执行一次。</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+       
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+<!-- 
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>jQuery</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="wangweilin">wangweilin</a></p>
+    <p><span class="copy-title">发布时间:</span>2017-05-12, 13:43:02</p>
+    <p><span class="copy-title">最后更新:</span>2022-03-27, 17:16:57</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2017/05/12/5.jQuery/" title="jQuery">http://yoursite.com/2017/05/12/5.jQuery/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+ -->
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2017-2020 Wanglog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': [],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

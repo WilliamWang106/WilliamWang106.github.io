@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>移动WEB | blog</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="移动WEB | blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="10.测试">
+<meta property="og:url" content="http://yoursite.com/2022/03/27/10.%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote s">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-27T09:16:57.553Z">
+<meta property="article:modified_time" content="2022-03-27T09:16:57.553Z">
+<meta property="article:author" content="wangweilin">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>wangweilin</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/WilliamWang106" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="weibo" href="http://weibo.com/u/2307534817" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:627516754@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=627516754&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(10)</small></div></li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="10">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">王伟霖</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="Search..." />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class=""
+           href="/2017/03/01/1-HTML%E5%9F%BA%E7%A1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTML基础测试修改">HTML基础测试修改</span>
+            <span class="post-date" title="2017-03-01 09:45:52">2017/03/01</span>
+        </a>
+        
+        <a  class=""
+           href="/2022/03/27/10.%E6%B5%8B%E8%AF%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="10.测试">10.测试</span>
+            <span class="post-date" title="2022-03-27 17:16:57">2022/03/27</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/05/3.JS%E5%9F%BA%E7%A1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS基础">JS基础</span>
+            <span class="post-date" title="2017-03-05 15:40:32">2017/03/05</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/05/2-%E7%A7%BB%E5%8A%A8WEB/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="移动WEB">移动WEB</span>
+            <span class="post-date" title="2017-03-05 12:42:32">2017/03/05</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/23/4.DOM/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS-DOM">JS-DOM</span>
+            <span class="post-date" title="2017-03-23 10:43:12">2017/03/23</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/05/12/5.jQuery/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="jQuery">jQuery</span>
+            <span class="post-date" title="2017-05-12 13:43:02">2017/05/12</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/28/6.JS%E9%AB%98%E7%BA%A7/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS-高级">JS-高级</span>
+            <span class="post-date" title="2017-03-28 00:00:00">2017/03/28</span>
+        </a>
+        
+        <a  class=""
+           href="/2018/03/19/8.git-material/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="git">git</span>
+            <span class="post-date" title="2018-03-19 00:00:00">2018/03/19</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/05/18/7.ajax/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ajax">Ajax</span>
+            <span class="post-date" title="2017-05-18 00:00:00">2017/05/18</span>
+        </a>
+        
+        <a  class=""
+           href="/2018/08/20/9.ES6/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ES6">ES6</span>
+            <span class="post-date" title="2018-08-20 19:32:19">2018/08/20</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-2-移动WEB" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">移动WEB</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <!-- <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2022-03-27 17:16:57'>2017-03-05 12:42</time>
+        
+    </div> -->
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#day-01"><span class="toc-text">day-01</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2D变换"><span class="toc-text">2D变换</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#坐标系"><span class="toc-text">坐标系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#介绍"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工具"><span class="toc-text">工具</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#移动-translate"><span class="toc-text">移动 translate</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#与定位-、margin-的区别"><span class="toc-text">与定位(、margin)的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#旋转-rotate"><span class="toc-text">旋转 rotate</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法-1"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特点"><span class="toc-text">特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#中心点（了解）"><span class="toc-text">中心点（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#缩放-scale"><span class="toc-text">缩放 scale</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2D简写"><span class="toc-text">2D简写</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#animation-动画"><span class="toc-text">animation 动画</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#定义动画"><span class="toc-text">定义动画</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#介绍-1"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#语法-2"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重点"><span class="toc-text">重点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动画序列"><span class="toc-text">动画序列</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法-3"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重点-1"><span class="toc-text">重点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#动画属性"><span class="toc-text">动画属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法-4"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意"><span class="toc-text">注意</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简写"><span class="toc-text">简写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法-5"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#重点-2"><span class="toc-text">重点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#案例分析步骤"><span class="toc-text">案例分析步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤"><span class="toc-text">步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#案例"><span class="toc-text">案例</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-前缀（了解）"><span class="toc-text">5.前缀（了解）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#介绍-2"><span class="toc-text">介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#语法-6"><span class="toc-text">语法</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="day-01"><a href="#day-01" class="headerlink" title="day-01"></a>day-01</h1><ul>
+<li>在页面做2D、动画效果，页面表现更为丰富；</li>
+<li>目标：<ul>
+<li><strong>2D：重点居中方案；</strong></li>
+<li>动画：知道动画属性代想·表什么意见即可；</li>
+</ul>
+</li>
+</ul>
+<h1 id="2D变换"><a href="#2D变换" class="headerlink" title="2D变换"></a>2D变换</h1><ul>
+<li>使元素旋转缩放等，页面表现丰富。配合动画做效果；</li>
+</ul>
+<h2 id="坐标系"><a href="#坐标系" class="headerlink" title="坐标系"></a>坐标系</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><ul>
+<li>2D：direction 方向 坐标系：</li>
+</ul>
+<p><img src="./imgs/007.png" alt=""></p>
+<ul>
+<li>每个盒子都自我构成一个自己的坐标系。</li>
+</ul>
+<p><img src="imgs/1568896378748.png" alt="1568896378748"></p>
+<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><ul>
+<li>伸出左胳膊，手掌朝向自己，四指朝下，大拇指X轴，四指Y轴；</li>
+</ul>
+<h2 id="移动-translate"><a href="#移动-translate" class="headerlink" title="移动 translate"></a>移动 translate</h2><ul>
+<li>可以改变元素在页面中的位置，类似<strong>定位</strong>；</li>
+</ul>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 单个写*/</span></span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translateX</span>(100<span class="selector-tag">px</span>);</span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translateY</span>(<span class="selector-tag">-50</span>%);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 合起来写*/</span></span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translate</span>(100<span class="selector-tag">px</span>, 100<span class="selector-tag">px</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 百分数*/</span></span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translate</span>(50%, 50%);</span><br></pre></td></tr></table></figure>
+
+<h3 id="与定位-、margin-的区别"><a href="#与定位-、margin-的区别" class="headerlink" title="与定位(、margin)的区别"></a>与定位(、margin)的区别</h3><ul>
+<li>定位：<ul>
+<li><strong>会影响其他盒子位置（脱离标准流）；</strong></li>
+<li>行内元素定位，直接变为块级元素；</li>
+</ul>
+</li>
+<li>移动：<ul>
+<li><strong>不影响其他元素的位置；</strong></li>
+<li>在行内元素无效；对块级元素生效；</li>
+</ul>
+</li>
+<li>扩展：<a href="http://www.caotama.com/4285.html；" target="_blank" rel="noopener">http://www.caotama.com/4285.html；</a></li>
+</ul>
+<h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><ul>
+<li><strong>居中的解决方案：</strong>不用关心被居中盒子本身的宽高是多少；</li>
+<li>微调盒子的位置；</li>
+</ul>
+<h2 id="旋转-rotate"><a href="#旋转-rotate" class="headerlink" title="旋转 rotate"></a>旋转 rotate</h2><ul>
+<li>旋转使页面表现更为丰富</li>
+</ul>
+<h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h3><ul>
+<li>单位是deg，正值顺时针。关键词：<strong>绕着；</strong></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">rotate</span>(45<span class="selector-tag">deg</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li><p>默认：为中心点旋转；</p>
+</li>
+<li><p>补充：伪元素</p>
+<ul>
+<li><p>为什么叫伪元素：页面HTML结构中没有元素，但是页面中却真实存在；</p>
+</li>
+<li><p>常用：做小图标引用；</p>
+</li>
+<li><p>特点：</p>
+<ul>
+<li>行内元素，</li>
+<li><strong>content属性不能丢；</strong></li>
+<li>div::before:hover不能这样用；用法：div:hover::before</li>
+<li><strong>伪元素只能用在双标签上；</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="中心点（了解）"><a href="#中心点（了解）" class="headerlink" title="中心点（了解）"></a>中心点（了解）</h2><ul>
+<li><p>改变中心点位置，2D转化（旋转、缩放）的效果不一样；</p>
+</li>
+<li><p>语法：默认旋转的基准点是中心点；50% 50%；</p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 具体PX值*/</span></span><br><span class="line"><span class="selector-tag">transform-origin</span><span class="selector-pseudo">:100px</span> 100<span class="selector-tag">px</span>;</span><br><span class="line"><span class="comment">/* 百分数*/</span></span><br><span class="line"><span class="selector-tag">transform-origin</span><span class="selector-pseudo">:50</span>% 50%;</span><br><span class="line"><span class="comment">/* 方位名词*/</span></span><br><span class="line"><span class="selector-tag">transform-origin</span><span class="selector-pseudo">:left</span> <span class="selector-tag">bottom</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 单个参数，第二个值默认为50%*/</span></span><br><span class="line"><span class="selector-tag">transform-origin</span><span class="selector-pseudo">:0</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="缩放-scale"><a href="#缩放-scale" class="headerlink" title="缩放 scale"></a>缩放 scale</h2><ul>
+<li><p>场景：鼠标悬浮，盒子放大；</p>
+</li>
+<li><p>后面的参数 为 倍数；（无单位）</p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 长度、宽度方向 缩放 */</span></span><br><span class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:scale(2</span>,3);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 长度、宽度方向 缩放为同一个比例*/</span></span><br><span class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:scale(2)</span>;</span><br><span class="line"><span class="selector-tag">transform</span><span class="selector-pseudo">:scale(0.5)</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>特点<ul>
+<li>会受 中心点 影响；</li>
+<li><strong>下面的子元素、文字、属性会被缩放；</strong></li>
+<li>使用场景：放大父级元素，下面的所有子元素都会跟着被放大；</li>
+</ul>
+</li>
+</ul>
+<h2 id="2D简写"><a href="#2D简写" class="headerlink" title="2D简写"></a>2D简写</h2><ul>
+<li><p>更为简洁地综合起来写2D相关的属性；</p>
+</li>
+<li><p>单独多次写，不生效，下面的会把上面的层叠掉；</p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translate</span>(<span class="selector-tag">x</span>,<span class="selector-tag">y</span>);</span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">rotate</span>(90<span class="selector-tag">deg</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用顺序不同，出现的效果不同，因为旋转会改变初始轴向；</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 移动在旋转前面 */</span></span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translate</span>(<span class="selector-tag">x</span>,<span class="selector-tag">y</span>) <span class="selector-tag">rotate</span>(90<span class="selector-tag">deg</span>) <span class="selector-tag">scale</span>(<span class="selector-tag">x</span>,<span class="selector-tag">y</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 旋转在前面 */</span></span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">rotate</span>(90<span class="selector-tag">deg</span>) <span class="selector-tag">translate</span>(<span class="selector-tag">x</span>,<span class="selector-tag">y</span>) <span class="selector-tag">scale</span>(<span class="selector-tag">x</span>,<span class="selector-tag">y</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="animation-动画"><a href="#animation-动画" class="headerlink" title="animation 动画"></a>animation 动画</h1><ul>
+<li>页面内实现一些列动画，可以循环播放，也可以播放几次；使丰富页面；</li>
+</ul>
+<h2 id="定义动画"><a href="#定义动画" class="headerlink" title="定义动画"></a>定义动画</h2><ul>
+<li>要掌握实现动画最基本核心步骤，可以完成一个动画；</li>
+</ul>
+<h3 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h3><ul>
+<li>动画 animation 是CSS3中具有<strong>颠覆性</strong>的特征之一，可通过设置一个元素在多个时间节点上的不同样式来达到一个动画的效果；</li>
+</ul>
+<h3 id="语法-2"><a href="#语法-2" class="headerlink" title="语法"></a>语法</h3><ul>
+<li>三要素：1定义及调用；2.时间</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 1. 定义:*/</span> 帧</span><br><span class="line"><span class="keyword">@keyframes</span> dong_hua &#123;</span><br><span class="line">    <span class="comment">/* 开始状态:*/</span></span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">        <span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">0px</span>);</span><br><span class="line">        <span class="attribute">background-color</span>: red;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/* 结束状态 */</span></span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">        <span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">1000px</span>);</span><br><span class="line">        <span class="attribute">background-color</span>: <span class="number">#222</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="comment">/* 调用:*/</span></span><br><span class="line">    <span class="attribute">animation-name</span>: dong_hua;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 2. 时间:*/</span></span><br><span class="line">    <span class="attribute">animation-duration</span>: <span class="number">3s</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h3><ul>
+<li>和过度的区别：动画可以实现<strong>更多的控制</strong>，且可连续自动播放；</li>
+<li>拓展思路：节点里可以写2D转化，也可以写我们基础班学习的各种属性；</li>
+</ul>
+<h2 id="动画序列"><a href="#动画序列" class="headerlink" title="动画序列"></a>动画序列</h2><ul>
+<li>时间节点，可以更为精准的控制动画的多个状态节点，动画的变化更为丰富；</li>
+</ul>
+<h3 id="语法-3"><a href="#语法-3" class="headerlink" title="语法"></a>语法</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> name &#123;</span><br><span class="line">    <span class="comment">/* 开始状态:*/</span></span><br><span class="line">    <span class="selector-tag">from</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/* 结束状态 */</span></span><br><span class="line">    <span class="selector-tag">to</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> name &#123;</span><br><span class="line">    <span class="comment">/* 开始状态:*/</span></span><br><span class="line">    0% &#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    50% &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    75% &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    83% &#123;</span><br><span class="line">       </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/* 结束状态 */</span></span><br><span class="line">    100% &#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="重点-1"><a href="#重点-1" class="headerlink" title="重点"></a>重点</h3><ul>
+<li>动画序列就是时间节点时的状态；</li>
+<li><strong>动画从开始执行到经过动画节点，都是基于上一个状态进行变化；</strong></li>
+</ul>
+<h2 id="动画属性"><a href="#动画属性" class="headerlink" title="动画属性"></a>动画属性</h2><ul>
+<li>丰富我们的动画特性，能做更多的属性控制；</li>
+</ul>
+<h3 id="语法-4"><a href="#语法-4" class="headerlink" title="语法"></a>语法</h3><p><img src="./imgs/009.png" alt=""></p>
+<ul>
+<li>animation-timing-function：动画 运动 速度曲线：速度快慢的体现；</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="comment">/* 匀速  */</span></span><br><span class="line">    <span class="attribute">animation-timing-function</span>: linear;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 慢-快-慢  默认值  */</span></span><br><span class="line">    <span class="attribute">animation-timing-function</span>: ease;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 慢-快  */</span></span><br><span class="line">    <span class="attribute">animation-timing-function</span>: ease-in;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 快-慢  */</span></span><br><span class="line">    <span class="attribute">animation-timing-function</span>: ease-out;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 慢-快-慢  */</span></span><br><span class="line">    <span class="attribute">animation-timing-function</span>: ease-in-out;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>animation-timing-function：steps(n)  分步 实现 老电影一帧一帧，整个动画分为几步骤完成</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 分步 实现 老电影一帧一帧，整个动画分为几步骤完成*/</span></span><br><span class="line"><span class="selector-tag">animation-timing-function</span>: <span class="selector-tag">steps</span>(<span class="selector-tag">n</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>animation-delay：动画推迟多久执行；动画得等待。</li>
+<li>animation-iteration-count：播放循坏次数 1 2  infinite无限次 </li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="comment">/* 指定次数设置  */</span></span><br><span class="line">    <span class="attribute">animation-iteration-count</span>: <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 无限次数设置  */</span></span><br><span class="line">    <span class="attribute">animation-iteration-count</span>: infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>animation-direction：循环方向：若0% 红色; 100% 黑色</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="comment">/*1 默认值 0-100 */</span></span><br><span class="line">    <span class="attribute">animation-direction</span>: normal;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*2 100-0 */</span></span><br><span class="line">    <span class="attribute">animation-direction</span>: reverse;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*3 0-100-0 */</span></span><br><span class="line">    <span class="attribute">animation-direction</span>: alternate;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*4 100-0-100 */</span></span><br><span class="line">    <span class="attribute">animation-direction</span>: alternate-reverse;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>animation-fill-mode：动画等待或者结束的状态;</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="comment">/*1 动画结束后，元素样式停留在 动画结束时的状态 */</span></span><br><span class="line">    <span class="attribute">animation-fill-mode</span>: forwards;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*2 在延迟等待的时间内，元素样式停留在 动画开始的状态 </span></span><br><span class="line"><span class="comment">    动画结束的时候，回到div本身的样式（回到起始状态）</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="attribute">animation-fill-mode</span>: backwards;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*3 同时设置了 forwards和backwards两个属性值</span></span><br><span class="line"><span class="comment">    在动画等待时间，样式为元素样式停留在 动画开始的状态，</span></span><br><span class="line"><span class="comment">    动画结束时，元素样式停留在 动画结束时的样式</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="attribute">animation-fill-mode</span>: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>animation-play-state：暂停和播放</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="comment">/*1 播放 */</span></span><br><span class="line">    <span class="attribute">animation-play-state</span>: running;</span><br><span class="line">    <span class="comment">/*2 暂停*/</span></span><br><span class="line">    <span class="attribute">animation-play-state</span>: paused;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
+<li>设置 animation-direction ，需设置动画 多次 执行；</li>
+<li>设置 animation-fill-mode，设置forwards ，动画不能设置 无限 执行；</li>
+</ul>
+<h2 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h2><ul>
+<li>简单把动画属性写在一起，代码简单；vscode有提示；</li>
+</ul>
+<h3 id="语法-5"><a href="#语法-5" class="headerlink" title="语法"></a>语法</h3><ul>
+<li>简写语法：动画名称  持续时间  速度曲线  等待时间  执行次数  执行的方向  动画等待或结束的状态</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">animation</span>: name duration timing-function delay iteration-count direction fill-mode;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>组动画：需要用 逗号 隔开每一个动画的相关属性设定（一个动画的多个属性设定之间用空格隔开）。</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">animation</span>: 动画名1 5<span class="selector-tag">s</span> <span class="selector-tag">linear</span>, 动画名2 2<span class="selector-tag">s</span> <span class="selector-tag">linear</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="重点-2"><a href="#重点-2" class="headerlink" title="重点"></a>重点</h3><ul>
+<li>animation-play-state 没有在简写内</li>
+<li>记忆：知道意思即可，记不住去查就行；</li>
+</ul>
+<h2 id="案例分析步骤"><a href="#案例分析步骤" class="headerlink" title="案例分析步骤"></a>案例分析步骤</h2><ul>
+<li>目标：自己拿到需求，可以按照步骤进行分解动画步骤，最后满足业务需求；</li>
+</ul>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ul>
+<li>布局：不要被动画干扰，先把动画屏蔽掉；</li>
+<li>分析：<ul>
+<li><strong>几个动画时间节点？</strong></li>
+<li>节点设置？CSS样式；</li>
+<li>其他动画属性？<ul>
+<li>一样的动画分析一个；</li>
+<li>连续动画和分步动画？</li>
+<li>匀速变化？还是变速变化？</li>
+<li>执行多次？无限次？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><ul>
+<li>热点：<ul>
+<li>底图：w:797px;h:616px;</li>
+<li>分析：<ul>
+<li>动画节点：3个；</li>
+<li>节点设置：缩放？或者width 0-40-70?</li>
+<li>动画属性：等待？线性？时间1.2s;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>大白熊：<ul>
+<li>盒子：宽高</li>
+<li>第一个动画：左侧移动到中间</li>
+<li>第二个动画：自己动（变换熊的姿势）<ul>
+<li>节点：2个</li>
+<li>节点设置：背景图位置移动</li>
+<li>动画属性：分帧动画，共8帧</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="5-前缀（了解）"><a href="#5-前缀（了解）" class="headerlink" title="5.前缀（了解）"></a>5.前缀（了解）</h1><ul>
+<li>新特性，对各家浏览器更好的兼容，以便以后出了兼容问题，我们可以从这个方向想；</li>
+</ul>
+<h2 id="介绍-2"><a href="#介绍-2" class="headerlink" title="介绍"></a>介绍</h2><ul>
+<li>-moz-：代表 firefox 浏览器私有属性</li>
+<li>-ms-：代表 ie 浏览器私有属性</li>
+<li>-webkit-：代表 safari、chrome 私有属性</li>
+<li>-o-：代表 Opera 私有属性</li>
+</ul>
+<h2 id="语法-6"><a href="#语法-6" class="headerlink" title="语法"></a>语法</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">-moz-border-radius</span>: 10<span class="selector-tag">px</span>; </span><br><span class="line"><span class="selector-tag">-webkit-border-radius</span>: 10<span class="selector-tag">px</span>; </span><br><span class="line"><span class="selector-tag">-o-border-radius</span>: 10<span class="selector-tag">px</span>; </span><br><span class="line"><span class="selector-tag">border-radius</span>: 10<span class="selector-tag">px</span>;   <span class="comment">/* 应该将不带前缀的属性写在最后 */</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>没有工程化工具，根据业务需要写这些前缀，解决样式的兼容；</li>
+<li>以后，有了工程化工具，注意这些工具包的配置就可以。</li>
+</ul>
+
+      
+       
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+<!-- 
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>移动WEB</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="wangweilin">wangweilin</a></p>
+    <p><span class="copy-title">发布时间:</span>2017-03-05, 12:42:32</p>
+    <p><span class="copy-title">最后更新:</span>2022-03-27, 17:16:57</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2017/03/05/2-%E7%A7%BB%E5%8A%A8WEB/" title="移动WEB">http://yoursite.com/2017/03/05/2-%E7%A7%BB%E5%8A%A8WEB/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+ -->
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2017-2020 Wanglog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': [],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS基础 | blog</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="JS基础 | blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="10.测试">
+<meta property="og:url" content="http://yoursite.com/2022/03/27/10.%E6%B5%8B%E8%AF%95/index.html">
+<meta property="og:site_name" content="blog">
+<meta property="og:description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;  More info: Writing Run server1$ hexo server  More info: Server Generate static files1$ hexo generate  More info: Generating Deploy to remote s">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-03-27T09:16:57.553Z">
+<meta property="article:modified_time" content="2022-03-27T09:16:57.553Z">
+<meta property="article:author" content="wangweilin">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>wangweilin</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="github" href="https://github.com/WilliamWang106" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="weibo" href="http://weibo.com/u/2307534817" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="email" href="mailto:627516754@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=627516754&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(10)</small></div></li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="10">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">王伟霖</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="Search..." />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class=""
+           href="/2017/03/01/1-HTML%E5%9F%BA%E7%A1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="HTML基础测试修改">HTML基础测试修改</span>
+            <span class="post-date" title="2017-03-01 09:45:52">2017/03/01</span>
+        </a>
+        
+        <a  class=""
+           href="/2022/03/27/10.%E6%B5%8B%E8%AF%95/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="10.测试">10.测试</span>
+            <span class="post-date" title="2022-03-27 17:16:57">2022/03/27</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/05/3.JS%E5%9F%BA%E7%A1%80/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS基础">JS基础</span>
+            <span class="post-date" title="2017-03-05 15:40:32">2017/03/05</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/05/2-%E7%A7%BB%E5%8A%A8WEB/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="移动WEB">移动WEB</span>
+            <span class="post-date" title="2017-03-05 12:42:32">2017/03/05</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/23/4.DOM/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS-DOM">JS-DOM</span>
+            <span class="post-date" title="2017-03-23 10:43:12">2017/03/23</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/05/12/5.jQuery/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="jQuery">jQuery</span>
+            <span class="post-date" title="2017-05-12 13:43:02">2017/05/12</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/03/28/6.JS%E9%AB%98%E7%BA%A7/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="JS-高级">JS-高级</span>
+            <span class="post-date" title="2017-03-28 00:00:00">2017/03/28</span>
+        </a>
+        
+        <a  class=""
+           href="/2018/03/19/8.git-material/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="git">git</span>
+            <span class="post-date" title="2018-03-19 00:00:00">2018/03/19</span>
+        </a>
+        
+        <a  class=""
+           href="/2017/05/18/7.ajax/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Ajax">Ajax</span>
+            <span class="post-date" title="2017-05-18 00:00:00">2017/05/18</span>
+        </a>
+        
+        <a  class=""
+           href="/2018/08/20/9.ES6/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="ES6">ES6</span>
+            <span class="post-date" title="2018-08-20 19:32:19">2018/08/20</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-3.JS基础" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">JS基础</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <!-- <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2022-03-27 17:16:57'>2017-03-05 15:40</time>
+        
+    </div> -->
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#js基础-day-01"><span class="toc-text">js基础 day-01</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#介绍"><span class="toc-text">介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初体验"><span class="toc-text">初体验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引入方式"><span class="toc-text">引入方式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#JS-注释"><span class="toc-text">JS 注释</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#输入输出"><span class="toc-text">输入输出</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#变量"><span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#语法"><span class="toc-text">语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命名"><span class="toc-text">命名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#交换值"><span class="toc-text">交换值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#补充"><span class="toc-text">补充</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据类型"><span class="toc-text">数据类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#基本类型"><span class="toc-text">基本类型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Number类型"><span class="toc-text">Number类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#String类型"><span class="toc-text">String类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布尔-Boolean-类型"><span class="toc-text">布尔(Boolean)类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null值"><span class="toc-text">null值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#undefined类型"><span class="toc-text">undefined类型</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查看数据类型"><span class="toc-text">查看数据类型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据类型转换"><span class="toc-text">数据类型转换</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#其他类型-转-Number类型"><span class="toc-text">其他类型 转 Number类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Number"><span class="toc-text">Number(  )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#parseInt"><span class="toc-text">parseInt()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#parseFloat"><span class="toc-text">parseFloat()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其它类型-转-String类型"><span class="toc-text">其它类型 转 String类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#String"><span class="toc-text">String(    )</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toString-NaN"><span class="toc-text">.toString()</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其它类型-转-Boolean类型"><span class="toc-text">其它类型 转 Boolean类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Boolean"><span class="toc-text">Boolean(  )</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="js基础-day-01"><a href="#js基础-day-01" class="headerlink" title="js基础 day-01"></a>js基础 day-01</h1><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><ul>
+<li>JavaScript：一门运行在<strong>浏览器</strong>端的<strong>脚本 编程 语言</strong></li>
+<li>浏览器：软件</li>
+<li>脚本：戏剧的剧本。只要按照固定的流程走一遍，就可以把整部戏演完了。但是如果中间有演员出事了，戏就暂停了。这个脚本指的是JavaScript的一个特点：如果执行到某一行出错了，后面的就不会再继续执行了。</li>
+<li>编程：编辑程序，编辑需要逻辑，需要脑子；</li>
+<li><strong>学习特点：首先你要分析逻辑过程；</strong></li>
+<li>语言：有自己一套的规则（语法）和单词 ，把这个单词和语法组合起来，表达想表达的意思；语法没有为什么，其核心目的就是为了支持我们所理解的世界；</li>
+<li>作用：<ul>
+<li>HTML结构：骨架；</li>
+<li>CSS：样式；皮肤；</li>
+<li>JS：<strong>交互</strong>：给骨架设计一系列能响应用户的动作，能和用户交流互动；</li>
+</ul>
+</li>
+</ul>
+<h2 id="初体验"><a href="#初体验" class="headerlink" title="初体验"></a>初体验</h2><ul>
+<li>语法：在script标签内部写JS的代码</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="comment">// JS ：交互</span></span><br><span class="line">  <span class="built_in">document</span>.getElementById(<span class="string">'box'</span>).onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;  </span><br><span class="line">    alert(<span class="string">'你点击了这'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="引入方式"><a href="#引入方式" class="headerlink" title="引入方式"></a>引入方式</h2><ul>
+<li>内嵌式：demo学习阶段的主要写法</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  &#x2F;&#x2F;  JS代码</span><br><span class="line">  alert(&#39;hello world&#39;);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>外链式：新建一个JS文件，文件里JS的代码，引入HTML页面内；作为个文件可以重复使用，项目开发阶段使用；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"./01-demo.js"</span>&gt;&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>行内式：了解，一般不用</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"button"</span> value=<span class="string">"点我"</span> onclick=<span class="string">"alert('helloworld')"</span>&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="JS-注释"><a href="#JS-注释" class="headerlink" title="JS 注释"></a>JS 注释</h1><ul>
+<li>语法：注释更好的屡清楚你的业务逻辑；不会执行</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// alert('hello world');  单行注释，一般就是简单的做个说明  </span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 多行注释</span></span><br><span class="line"><span class="comment">* 一般把想要注释的内容写到这里面来，大段内容；不能 嵌套使用；</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h1><ul>
+<li><p>作用：交互的简单入口，可以给页面输入我们想要输入的信息，页面输出一定的信息；为了与你写的代码更好交流和调试；</p>
+</li>
+<li><p>输入：页面中弹出 输入框，需要输入内容后才能继续；开发不常用，我们只是为了配合学习；</p>
+<ul>
+<li>prompt：提示;</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prompt(&quot;输入框的提示内容&quot;);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>输出语法：</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 浏览器会有个弹窗，只要不点击弹窗，后面就不会执行；alert 警告</span></span><br><span class="line">alert(<span class="string">'要输出的内容'</span>)  </span><br><span class="line"></span><br><span class="line"><span class="comment">// 在控制台输出，不阻止下面的执行。调试常用 console控制台 log 日志；！！！</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'要输出的内容'</span>)； </span><br><span class="line"></span><br><span class="line"><span class="comment">// 可逗号隔开，输出多个值；</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'要输出的内容'</span>,<span class="number">1</span>);   </span><br><span class="line"><span class="comment">// 查看JS的执行情况：鼠标点击右键，或者键盘F12，看Console控制台；</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在页面body中显示，把解析HTML结构；</span></span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">'&lt;div&gt;文字&lt;/div&gt;'</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><ul>
+<li>作用：语法的一部分，编程语言，得有一些数据；比如前面说的prompt(“输入框的提示内容”);，用户输入数据，变量接收；本质就是存<strong>数据</strong>的；</li>
+<li>变量：与之对应叫常量（一直不变的量）;</li>
+</ul>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><ul>
+<li>使用<code>var</code>这个关键字，告诉浏览器，我们要定义一个变量，使用<code>=</code>号告诉浏览器，我们要把<strong>右边的数据存储</strong>到<strong>变量（单词）</strong>里面；直接参加我们需要的计算；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">// 关键字var声明时 赋值</span></span><br><span class="line"><span class="keyword">var</span> num1 = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> num2 = <span class="number">20</span>;</span><br><span class="line"><span class="built_in">console</span>.log(num1 + num2);<span class="comment">//计算两个数字的和</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// prompt 有返回值；</span></span><br><span class="line"><span class="keyword">var</span> pwd = prompt(<span class="string">'请输入你的很行卡密码'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(pwd);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 过程：定义变量、变量赋值 var a = 10;</span></span><br><span class="line"><span class="comment">// 变量声明 没有赋值</span></span><br><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="comment">// 变量赋值</span></span><br><span class="line">a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明时赋值，再次改变值；</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="number">100</span>;</span><br><span class="line">b = <span class="number">200</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 变量自己给自己赋值运算</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 把右侧计算的结果，赋值 给左侧</span></span><br><span class="line">a = a + <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>了解内存数据存储：</li>
+</ul>
+<p><img src="./assets/002.png" alt=""></p>
+<p><img src="./assets/003.png" alt=""></p>
+<h2 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h2><ul>
+<li>范围：字母、数字、下划线、$符号；</li>
+<li><strong>变量名字不能用数字作为开头</strong></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 变量不能使用数字开头</span></span><br><span class="line"><span class="keyword">var</span> <span class="number">15</span>a = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 会在控制台中报错：Uncaught SyntaxError: Unexpected </span></span><br><span class="line"><span class="comment">// Uncaught - 未捕获的</span></span><br><span class="line"><span class="comment">// SyntaxError - 语法错误</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Unexpected - 意料之外的</span></span><br><span class="line"><span class="comment">// number - 数字</span></span><br><span class="line"><span class="comment">// 翻译过来就是： 这行有一个语法错误，你的数字不符合语法要求</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>变量名字不能使用JavaScript语法中的关键字和保留字</strong></li>
+<li>关键字：在JavaScript语法中，具有特殊意义的单词，比如我们学习过的用于声明变量的<code>var</code>；后面要学习的if else for wihle case break….</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 变量名字不能使用关键字</span></span><br><span class="line"><span class="keyword">var</span> <span class="keyword">var</span> = <span class="number">20</span>;</span><br><span class="line"><span class="comment">// 会在控制台中报错： Uncaught SyntaxError: Unexpected token var</span></span><br><span class="line"><span class="comment">// token - 标记，记号，在编程中我们翻译成 '标识符'</span></span><br><span class="line"><span class="comment">// 意思是这行有一个语法错误，出现了一个意料之外的标识符 var</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>保留字：JavaScript是不断发展的，以前的功能用了以前的关键字，将来要加入新的功能的时候，可能要用到新的关键字，所有JavaScript在一开始的时候就保留了部分单词，以便将来把保留的单词作为关键字</p>
+</li>
+<li><p>变量名字是区分大小写的；</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 变量名字是区分大小写的</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);<span class="comment">// 正常输出</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(A);<span class="comment">// 在控制台中报错：Uncaught ReferenceError: A is not defined</span></span><br><span class="line"><span class="comment">// ReferenceError - 引用错误</span></span><br><span class="line"><span class="comment">// not defined - 未定义</span></span><br><span class="line"><span class="comment">// 意思是 A 这个变量我们没有定义就使用了，可见a和A是不一样的，不是同一个变量</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如何定义呢？<ul>
+<li>设置和你公司业务有关系的变量，取英文的翻译</li>
+<li>使用驼峰（第一个单词的第一个字母小写，第二个单词的首字母大写）；getData</li>
+<li>个人习惯：get_data</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 驼峰 getData</span></span><br><span class="line"><span class="keyword">var</span> userName = <span class="string">'张三'</span>;</span><br><span class="line"><span class="keyword">var</span> password = <span class="string">'123456'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 个人习惯 get_data</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<h2 id="交换值"><a href="#交换值" class="headerlink" title="交换值"></a>交换值</h2><ul>
+<li>交换两个变量的值：生活中两杯水，怎么把水相互换下？</li>
+<li>步骤：<ul>
+<li>1.新声明个变量C；</li>
+<li>2.把A变量赋值过去给C；</li>
+<li>3.把B变量给A，把C变量值给A；</li>
+</ul>
+</li>
+</ul>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1 变量可以一次性声明多个 没有赋值</span></span><br><span class="line"><span class="keyword">var</span> a,b,c,d;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2 还可以声明多个的同时  进行赋值；</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>,b = <span class="number">20</span>,c = <span class="number">30</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//3 变量也可以作为另一个变量的值</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="comment">// 赋值给b（复制了一份）,a再次变化时，b不受影响；</span></span><br><span class="line"><span class="keyword">var</span> b = a;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><ul>
+<li>变量：用于接受数据，数据的类型不同；</li>
+<li>怎么区别不同？<ul>
+<li>值的大小，比如：5 6区别</li>
+<li>类型：我 、1；</li>
+</ul>
+</li>
+<li>为什么不同？生活中需要不同的类型描述不同的事情，程序源于生活又高于生活；</li>
+<li>基本类型（简单数据类型）：Number（NaN）类型、 String类型、Boolean类型、null（值）、undefined类型； </li>
+<li>复杂类型：对象Object；</li>
+</ul>
+<h1 id="基本类型"><a href="#基本类型" class="headerlink" title="基本类型"></a>基本类型</h1><ul>
+<li>数字（NaN）类型、 字符串类型、布尔类型、null（值）、undefined类型；</li>
+</ul>
+<h2 id="Number类型"><a href="#Number类型" class="headerlink" title="Number类型"></a>Number类型</h2><ul>
+<li>所有的数字都是number类型，如：10，99.8，-12…</li>
+<li>NaN：<strong>not a number，不是某个数，泛指，不知道指哪个数，但是为Number类型；</strong></li>
+</ul>
+<h2 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h2><ul>
+<li>语法：<strong>一定要带引号，单双无所谓；</strong>只要你戴上引号，就是字符串；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">'abc'</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>程序中，默认把一对引号，认为就是字符串的结束；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"小明说:"</span>小红明天真漂亮<span class="string">""</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>此时会在控制台中报错： Uncaught SyntaxError: missing ) after argument list；在想要转义的字符前面加上一 <code>\</code>；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单双引号可以相互包着，能显示；</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'小明说:"小红明天真漂亮'</span><span class="string">");</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>转译字符：把<strong>特殊的字符</strong>转成 JS 可以读的字符；</li>
+<li>特殊的字符：<code>&quot;&quot;  &#39;&#39; \</code></li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">"小明说:\"小红明天真漂亮\""</span>);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="布尔-Boolean-类型"><a href="#布尔-Boolean-类型" class="headerlink" title="布尔(Boolean)类型"></a>布尔(Boolean)类型</h2><ul>
+<li>语法：标示某个结果，存在或者不存在（不成立、假）；只有两个值；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">5</span>&gt;<span class="number">4</span>; <span class="comment">// 存在；</span></span><br><span class="line"><span class="built_in">console</span>.log(a)  <span class="comment">// 输出true,表示存在，成立；</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> b = <span class="literal">false</span>; <span class="comment">// 不存在</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="null值"><a href="#null值" class="headerlink" title="null值"></a>null值</h2><ul>
+<li>值：null用来表示尚未存在的对象（<strong>复杂类型</strong>）；<strong>专门赋值为null；</strong></li>
+<li><strong>其实null不是简单类型，为复杂类型；这里把它归结为简单类型，只是因为它的值是单个的，为null，我们拿过来用</strong>，先有印象；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="literal">null</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="undefined类型"><a href="#undefined类型" class="headerlink" title="undefined类型"></a>undefined类型</h2><ul>
+<li>undefined类型：undefined值；</li>
+<li>变量没有赋值，<strong>也不知道是啥</strong>，不是空；默认赋值为undefined</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="built_in">console</span>.log(a);  <span class="comment">// 输出undefined</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="查看数据类型"><a href="#查看数据类型" class="headerlink" title="查看数据类型"></a>查看数据类型</h1><ul>
+<li>作用：不同的数据类型，参与运算结果不同；需要判断数据是什么类型；</li>
+<li>语法：反应判断当前值的类型的说明；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> 数据;</span><br><span class="line"><span class="keyword">typeof</span>(数据);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="number">123</span>);<span class="comment">// number</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="string">'abc'</span>);<span class="comment">//string</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">null</span>); <span class="comment">// Object</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">true</span>); <span class="comment">// boolean</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">undefined</span>); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>案例：老板输入绩效工资，加上默认的基本工资，计算当月的工资</li>
+<li>实现：<ul>
+<li>使用prompt()弹出输入框，让老板输入绩效工资，</li>
+<li>使用变量接受数据；</li>
+<li>根据公式算出总的工资；</li>
+<li>告诉用户 alert()；</li>
+</ul>
+</li>
+<li>解决：<ul>
+<li>prompt()弹出输入框得到数据是字符串，默认的。</li>
+<li>字符串 +，<strong>临近字符串的数据类型变为字符串；变成字符串的拼接；</strong></li>
+<li>需要把字符串转为数字类型；</li>
+</ul>
+</li>
+</ul>
+<h1 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h1><ul>
+<li>目的：数据参与运算，保证<strong>数据类型</strong>一致，才能得到预期的结果；</li>
+</ul>
+<h2 id="其他类型-转-Number类型"><a href="#其他类型-转-Number类型" class="headerlink" title="其他类型 转 Number类型"></a>其他类型 转 Number类型</h2><ul>
+<li>其他：字符串类型、布尔类型、null值 、undefined类型；</li>
+</ul>
+<h3 id="Number"><a href="#Number" class="headerlink" title="Number(  )"></a>Number(  )</h3><ul>
+<li>语法：把需要转的值或者变量放入括号内部；</li>
+<li>结果：肯定能转成功；<ul>
+<li>数字</li>
+<li>NaN</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> res0 = <span class="built_in">Number</span>(<span class="string">'abc'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res0); <span class="comment">// 输出数字NaN</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res1 = <span class="built_in">Number</span>(<span class="string">'123'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res1); <span class="comment">// 输出数字123</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res1); <span class="comment">// 输出 number</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res2 = <span class="built_in">Number</span>(<span class="literal">true</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res2);<span class="comment">// 输出 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res2); <span class="comment">// 输出number</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res3 = <span class="built_in">Number</span>(<span class="literal">null</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res3); <span class="comment">// 输出0</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res3); <span class="comment">// 输出number</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res4 = <span class="built_in">Number</span>(<span class="literal">undefined</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res4); <span class="comment">// 输出 NaN  , NaN 就是 not a  number 的缩写，表示某个结果不是某个数字</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res4); <span class="comment">// 输出 number</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="parseInt"><a href="#parseInt" class="headerlink" title="parseInt()"></a>parseInt()</h3><ul>
+<li>将其他类型为数字<strong>整数</strong>；</li>
+<li>转成功类型为<strong>字符串</strong>，纯字符串、true、null、undefined都是NaN；<ul>
+<li>如果<strong>字符串前面是数字</strong>，可以把前面的数字转化为数字类型；</li>
+<li>如果字符串中前面不是数字，转NaN；</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res1 = <span class="built_in">parseInt</span>(<span class="string">'123'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res1); <span class="comment">// 输出 123 </span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res1); <span class="comment">// 输出number</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res2 = <span class="built_in">parseInt</span>(<span class="string">'12a'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res2);<span class="comment">// 输出 12</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res2);<span class="comment">// 输出number</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res3 =<span class="built_in">parseInt</span>(<span class="string">'a123'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res3); <span class="comment">// 输出 NaN</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res3); <span class="comment">// 输出number</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res4 = <span class="built_in">parseInt</span>(<span class="string">'abc'</span>);  <span class="comment">//其他 true null undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(res4,<span class="keyword">typeof</span> res4);  <span class="comment">// 输出NaN</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="parseFloat"><a href="#parseFloat" class="headerlink" title="parseFloat()"></a>parseFloat()</h3><ul>
+<li>parseFloat这个方法用于转换字符串转换成小数(在编程中，小数也称浮点数)</li>
+<li>转成功类型为<strong>字符串</strong>，纯字符串、true、null、undefined都是NaN；<ul>
+<li>如果<strong>字符串前面是数字</strong>，可以把前面的数字转化为数字类型；</li>
+<li>如果字符串中前面不是数字，转NaN；</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res1 = <span class="built_in">parseInt</span>(<span class="string">'123.123'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res1); <span class="comment">// 输出 123.123</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res1); <span class="comment">// 输出number</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res2 = <span class="built_in">parseInt</span>(<span class="string">'12.12a'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res2);<span class="comment">// 输出 12.12</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res2);<span class="comment">// 输出number</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res3 =<span class="built_in">parseInt</span>(<span class="string">'a12.3'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res3); <span class="comment">// 输出 NaN</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res3); <span class="comment">// 输出number</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>小结：<ul>
+<li>字符串 + ：拼接 ，+  对于字符串比较特别；字符串的语法；</li>
+<li>字符串 转 数字：<ul>
+<li>数字</li>
+<li>NaN</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="其它类型-转-String类型"><a href="#其它类型-转-String类型" class="headerlink" title="其它类型 转 String类型"></a>其它类型 转 String类型</h2><ul>
+<li>其他类型：Number 类型、boolean类型、null（值）、undefined类型（值undefined）</li>
+</ul>
+<h3 id="String"><a href="#String" class="headerlink" title="String(    )"></a>String(    )</h3><ul>
+<li><p>转化特点：有引号就行了；</p>
+</li>
+<li><p>语法：转呗；反正最后就是用单双引号包起来了；</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res1 = <span class="built_in">String</span>(<span class="number">123</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res1);  <span class="comment">// 输出字符串的 123</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res1); <span class="comment">// 输出 string</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res2 = <span class="built_in">String</span>(<span class="literal">true</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res2); <span class="comment">// 输出字符串的 true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res2); <span class="comment">// 输出 string</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res3 = <span class="built_in">String</span>(<span class="literal">undefined</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res3); <span class="comment">// 输出 字符串 undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res3);<span class="comment">// 输出 string</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res4 = <span class="built_in">String</span>(<span class="literal">null</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res4); <span class="comment">// 输出 字符串null</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res4); <span class="comment">// 输出 string</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title=".toString()"></a>.toString()</h3><ul>
+<li>语法：undefined和null不能使用这个方式变成字符串；</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res1 = (<span class="number">123</span>).toString();</span><br><span class="line"><span class="built_in">console</span>.log(res1); <span class="comment">// 输出字符串123</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res1); <span class="comment">// 输出string</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res2 = <span class="literal">true</span>.toString();</span><br><span class="line"><span class="built_in">console</span>.log(res2); <span class="comment">// 输出字符串true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res2); <span class="comment">// 输出string</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res3 = <span class="literal">undefined</span>.toString();</span><br><span class="line"><span class="built_in">console</span>.log(res3); <span class="comment">// 报错：Cannot read property 'toString' of undefined</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res4 = <span class="literal">null</span>.toString();</span><br><span class="line"><span class="built_in">console</span>.log(res4); <span class="comment">//报错： Cannot read property 'toString' of null</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="其它类型-转-Boolean类型"><a href="#其它类型-转-Boolean类型" class="headerlink" title="其它类型 转 Boolean类型"></a>其它类型 转 Boolean类型</h2><ul>
+<li>其他类型：字符串类型、数字类型、null（值）、undefined类型（值）</li>
+<li>特点：返回一个布尔值；true、false；</li>
+</ul>
+<h3 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean(  )"></a>Boolean(  )</h3><ul>
+<li>语法：</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res1 = <span class="built_in">Boolean</span>(<span class="number">123</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res1);<span class="comment">// 输出true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res1); <span class="comment">// 输出 boolean</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res2 = <span class="built_in">Boolean</span>(<span class="string">'abc'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res2);<span class="comment">// 输出true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res2); <span class="comment">// 输出 boolean</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res3 = <span class="built_in">Boolean</span>(<span class="literal">undefined</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res3);<span class="comment">// 输出false</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res3); <span class="comment">// 输出 boolean</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res4 = <span class="built_in">Boolean</span>(<span class="literal">null</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res4);<span class="comment">// 输出false</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> res4); <span class="comment">// 输出 boolean</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在js里面，我们在转换其它类型为布尔类型的时候，只有6个情况是false</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> res1 = <span class="built_in">Boolean</span>(<span class="number">0</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res1); <span class="comment">//输出false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res3 = <span class="built_in">Boolean</span>(<span class="literal">NaN</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res3); <span class="comment">//输出false</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res2 = <span class="built_in">Boolean</span>(<span class="string">''</span>);<span class="comment">// 空字符，里面啥没有，空格也没有；</span></span><br><span class="line"><span class="built_in">console</span>.log(res2); <span class="comment">//输出false</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res6 = <span class="built_in">Boolean</span>(<span class="literal">false</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res6); <span class="comment">//输出false</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res5 = <span class="built_in">Boolean</span>(<span class="literal">null</span>);</span><br><span class="line"><span class="built_in">console</span>.log(res5); <span class="comment">//输出false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> res4 = <span class="built_in">Boolean</span>(<span class="literal">undefined</span>); </span><br><span class="line"><span class="built_in">console</span>.log(res4); <span class="comment">//输出false</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+       
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+<!-- 
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>JS基础</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="wangweilin">wangweilin</a></p>
+    <p><span class="copy-title">发布时间:</span>2017-03-05, 15:40:32</p>
+    <p><span class="copy-title">最后更新:</span>2022-03-27, 17:16:57</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2017/03/05/3.JS%E5%9F%BA%E7%A1%80/" title="JS基础">http://yoursite.com/2017/03/05/3.JS%E5%9F%BA%E7%A1%80/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+ -->
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2017-2020 Wanglog</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': [],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
